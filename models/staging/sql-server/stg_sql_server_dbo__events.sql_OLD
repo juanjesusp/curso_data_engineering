@@ -1,0 +1,27 @@
+{{ 
+  config(
+    materialized='view'
+  ) 
+}}
+
+WITH src_events AS (
+    SELECT * 
+    FROM {{ source('sql_server_dbo', 'events') }}
+),
+
+renamed_casted AS (
+    SELECT
+          EVENT_ID
+        , PAGE_URL
+        , EVENT_TYPE
+        , USER_ID
+        , COALESCE(NULLIF(TRIM(PRODUCT_ID), ''), 'DESCONOCIDO') as PRODUCT_ID
+        , SESSION_ID
+        , CREATED_AT
+        , COALESCE(NULLIF(TRIM(ORDER_ID), ''), 'DESCONOCIDO') as ORDER_ID
+        , coalesce(_fivetran_deleted, false) as _fivetran_deleted
+        , convert_timezone('UTC',_fivetran_synced) as _fivetran_synced
+    FROM src_events
+)
+
+SELECT * FROM renamed_casted

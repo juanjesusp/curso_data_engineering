@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: budget
+    description: 'Model for budget table.'
+    columns:
+      - name: _row
+        tests:
+          - not_null
+      - name: product_id
+        tests:
+          - not_null
+      - name: quantity
+        tests:
+          - not_null
+      - name: month
+        tests:
+          - not_null
+      - name: _fivetran_synced
+        tests:
+          - not_null
