@@ -11,12 +11,16 @@ WITH src_order_items AS (
 
 renamed_casted AS (
     SELECT
-          ORDER_ID
-        , PRODUCT_ID
-        , QUANTITY
-        , coalesce(_fivetran_deleted, false) as _fivetran_deleted
-        , convert_timezone('UTC',_fivetran_synced) as _fivetran_synced
-    FROM src_order_items
+          B.PRICE
+        , B.INVENTORY
+        , B.NAME
+        , A.ORDER_ID
+        , A.PRODUCT_ID
+        , A.QUANTITY
+        , coalesce(A._fivetran_deleted, false) as _fivetran_deleted
+        , convert_timezone('UTC',A._fivetran_synced) as _fivetran_synced
+    FROM ALUMNO21DEVBRONZEDB.SQL_SERVER_DBO.ORDER_ITEMS A
+    INNER JOIN PRODUCTS B ON A.PRODUCT_ID=B.PRODUCT_ID
 )
 
-SELECT * FROM renamed_casted
+SELECT * FROM renamed_casted 
