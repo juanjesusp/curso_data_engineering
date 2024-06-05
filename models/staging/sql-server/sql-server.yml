@@ -2,7 +2,7 @@ version: 2
 sources:
   - name: sql_server_dbo
     schema: sql_server_dbo
-    database: ALUMNO21DEVBRONZEDB
+    database: "{{ env_var('DBT_ENVIRONMENTS') }}_BRONZE_DB"  # this is the name of our database
     quoting:
       database: false
       schema: false
@@ -95,3 +95,4 @@ sources:
         columns:
           - name: ID_STATUS
           - name: STATUS_NAME
+          
