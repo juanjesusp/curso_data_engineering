@@ -21,7 +21,7 @@ SELECT
         , COALESCE(NULLIF(TRIM(A.ORDER_ID), ''), 'DESCONOCIDO') as ORDER_ID
         , coalesce(A._fivetran_deleted, false) as _fivetran_deleted
         , convert_timezone('UTC',A._fivetran_synced) as _fivetran_synced
-        , A.ORDER_ID
+       -- , A.ORDER_ID
     FROM ALUMNO21DEVBRONZEDB.SQL_SERVER_DBO.events A
     INNER JOIN ALUMNO21DEVBRONZEDB.SQL_SERVER_DBO.USERS B ON A.USER_ID=B.USER_ID
     INNER JOIN ALUMNO21DEVBRONZEDB.SQL_SERVER_DBO.PRODUCTS C ON A.PRODUCT_ID=C.PRODUCT_ID

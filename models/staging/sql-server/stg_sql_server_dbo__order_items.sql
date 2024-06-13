@@ -20,7 +20,7 @@ renamed_casted AS (
         , coalesce(A._fivetran_deleted, false) as _fivetran_deleted
         , convert_timezone('UTC',A._fivetran_synced) as _fivetran_synced
     FROM ALUMNO21DEVBRONZEDB.SQL_SERVER_DBO.ORDER_ITEMS A
-    INNER JOIN PRODUCTS B ON A.PRODUCT_ID=B.PRODUCT_ID
+    INNER JOIN ALUMNO21DEVBRONZEDB.SQL_SERVER_DBO.PRODUCTS B ON A.PRODUCT_ID=B.PRODUCT_ID
 )
 
 SELECT * FROM renamed_casted 
