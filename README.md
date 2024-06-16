@@ -92,7 +92,7 @@ Ejecutar los siguientes comandos:
 ## **Recursos**
 
 - Aprender más sobre dbt en la [documentación](https://docs.getdbt.com/docs/introduction)
-- Revisar el foro para las preguntas más comunes y sus respuestas
+- Visitar el [foro](https://discourse.getdbt.com/) para las preguntas más comunes y sus respuestas
 - Unirse a la comunidad de dbt para aprender de otros analistas e ingenieros
 - Encuentra eventos dbt cerca de ti
 - Revisar el blog para las últimas novedades sobre el desarrollo y las mejores prácticas de dbt
