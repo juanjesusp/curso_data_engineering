@@ -12,6 +12,8 @@
 
 [Usar el proyecto](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#usar-el-proyecto)
 
+[Recursos](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#recursos)
+
 ---
 
 ## **Estructura del proyecto**
