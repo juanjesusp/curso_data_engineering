@@ -1,5 +1,7 @@
 # curso_data_engineering
 
+https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#estructura-del-proyecto
+
 
 
 ## **Estructura del proyecto**
