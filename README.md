@@ -27,7 +27,9 @@ Además, una vez hemos establecido tests en nuestro proyecto, cuando continuemos
 
 Los tests son pruebas para validar que los datos de nuestros modelos y sources son correctos.
 
+## **Snapshots**
 
+Los snapshots son una herramienta que nos permite en dbt ver el estado anterior de los datos sobre tablas mutables, ya que en ocasiones en algunos DW no es posible. Es decir, registra los cambios de una tabla mutable en el tiempo.
 
 
 ## **Para este proyecto, se han utilizado las siguientes herramientas:**
