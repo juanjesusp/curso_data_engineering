@@ -36,7 +36,8 @@ Los snapshots son una herramienta que nos permite en dbt ver el estado anterior 
 
 ### **DBT(DATA BUILD TOOL)**
 
-![Data_build_tool_(dbt)_logo svg](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/cb089d39-a510-48f9-8a3e-4a43b648145a)
+<img width="90" alt="dbt-bit_tm" src="https://github.com/juanjesusp/curso_data_engineering/assets/170645486/c662e11c-30fa-4dae-b552-477d5bb3762a">
+
 
 
 DBT permite a los ingenieros de datos y analistas realizar transformaciones en los datos escribiendo sentencias SQL de tipo SELECT. Internamente, DBT traduce estas sentencias en tablas y en vistas. De esta forma facilita la creación de transformaciones sobre los datos disponibles en el data warehouse.
