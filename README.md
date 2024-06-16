@@ -33,4 +33,6 @@ Ahora vamos a explicar con un poco más de detalle el proceso de las etepas de B
 
 Bronze. Como hemos dicho anteriormente, son los datos tal cual vienen de los sources, y son los datos tal cual vienen, sin ningún tipo de cambio.
 
-Silver. 
+Silver. Explicación....
+
+
