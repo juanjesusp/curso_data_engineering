@@ -29,10 +29,13 @@ Además, una vez hemos establecido tests en nuestro proyecto, cuando continuemos
 
 Los tests son pruebas para validar que los datos de nuestros modelos y sources son correctos.
 
+---
+
 ## **Snapshots**
 
 Los snapshots son una herramienta que nos permite en dbt ver el estado anterior de los datos sobre tablas mutables, ya que en ocasiones en algunos DW no es posible. Es decir, registra los cambios de una tabla mutable en el tiempo.
 
+---
 
 ## **Para este proyecto, se han utilizado las siguientes herramientas:**
 
@@ -48,7 +51,7 @@ Para funcionar, necesita Python 3.7 o superior. Es posible instalarlo fácilment
 
 DBT CLI ofrece la capacidad de interactuar con la herramienta para ejecutar los modelos, ejecutar tests o generar documentación. La interfaz de usuario (UI) se usa para visualizar la documentación y el linaje, pero no permite editar las configuraciones ni realizar cambios en el sistema.
 
-
+---
 
 
 ### **SnowFlake**
@@ -56,3 +59,5 @@ DBT CLI ofrece la capacidad de interactuar con la herramienta para ejecutar los 
 <img src="https://www.clipartmax.com/png/small/200-2002047_snowflake-data-warehouse-logo.png" alt="Snowflake Data Warehouse Logo @clipartmax.com">
 
 Snowflake es una plataforma de almacenamiento y análisis de datos en la nube altamente diseñada para ayudar a empresas y organizaciones a almacenar, procesar y analizar grandes cantidades de datos de manera eficiente y segura. Snowflake se destaca por su arquitectura única y su capacidad para manejar datos estructurados y semiestructurados, siendo un entorno escalable y totalmente administrado. 
+
+---
