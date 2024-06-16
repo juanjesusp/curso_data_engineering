@@ -15,3 +15,14 @@ Imagen....
 SnowFlake
 
 Snowflake es una plataforma de almacenamiento y análisis de datos en la nube altamente diseñada para ayudar a empresas y organizaciones a almacenar, procesar y analizar grandes cantidades de datos de manera eficiente y segura. Snowflake se destaca por su arquitectura única y su capacidad para manejar datos estructurados y semiestructurados, siendo un entorno escalable y totalmente administrado. 
+
+
+Estructura del proyecto
+
+Tiene 2 data sources, que son Google Sheets y SQL server. A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
+
+- Bronze. Son los datos crudos tal cual, vienen sin tratar.
+
+- Silver. Aquí se producen transformaciones y casteos.
+
+- Gold. En esta última capa, contiene tablas de dimensiones y tablas de hechos.
