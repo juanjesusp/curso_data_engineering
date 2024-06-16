@@ -26,10 +26,10 @@ Tiene 2 data sources, que son Google Sheets y SQL server. A parte, el proyecto e
 
 - Silver. Aquí se producen transformaciones y casteos. Podemos ver un ejemplo del proyecto de la capa silver en el siguiente enlace:
 
-- 
+https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/staging
 
-- Gold. En esta última capa, contiene tablas de dimensiones y tablas de hechos.
+- Gold. En esta última capa, contiene tablas de dimensiones y tablas de hechos. Podemos ver un ejemplo del proyecto de la capa Gold en el siguiente enlace: 
 
-
+https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/marts/core
 
 
