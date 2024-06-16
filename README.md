@@ -42,7 +42,8 @@ Para funcionar, necesita Python 3.7 o superior. Es posible instalarlo fácilment
 
 DBT CLI ofrece la capacidad de interactuar con la herramienta para ejecutar los modelos, ejecutar tests o generar documentación. La interfaz de usuario (UI) se usa para visualizar la documentación y el linaje, pero no permite editar las configuraciones ni realizar cambios en el sistema.
 
-Imagen....
+![dbt5596](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/238690c0-f1f2-4912-a474-2fdeab3f081b)
+
 
 ### **SnowFlake**
 
