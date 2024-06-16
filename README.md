@@ -2,7 +2,7 @@
 
 
 
-**Estructura del proyecto**
+## **Estructura del proyecto**
 
 Tiene 2 data sources, que son Google Sheets y SQL server. A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
