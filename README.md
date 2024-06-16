@@ -17,7 +17,15 @@ https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/stagi
 
 https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/marts/core
 
-Testeos y funcionalidades
+Testing
+
+Los datos nunca están limpios al 100%. Siempre habrá matices que considerar, lógica de negocio que aplicar y datos que limpiar antes de que estén listos para ser consumidos y analizados. 
+
+Proactivamente probar sus datos le permite tener más facilidad de que los datos que están pasando a l@s usuari@s son exactos.
+
+Además, una vez hemos establecido tests en nuestro proyecto, cuando continuemos realizando desarrollos estos nos permitirán validar que todo sigue siendo correcto y no hemos realizado un cambio que afecte a otros desarrollos.
+
+Los tests son pruebas para validar que los datos de nuestros modelos y sources son correctos.
 
 
 
