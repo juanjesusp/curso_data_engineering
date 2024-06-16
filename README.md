@@ -21,8 +21,16 @@ Estructura del proyecto
 
 Tiene 2 data sources, que son Google Sheets y SQL server. A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
+
 - Bronze. Son los datos crudos tal cual, vienen sin tratar.
 
 - Silver. Aquí se producen transformaciones y casteos.
 
 - Gold. En esta última capa, contiene tablas de dimensiones y tablas de hechos.
+
+Ahora vamos a explicar con un poco más de detalle el proceso de las etepas de Bronze, Silver y Gold.
+
+
+Bronze. Como hemos dicho anteriormente, son los datos tal cual vienen de los sources, y son los datos tal cual vienen, sin ningún tipo de cambio.
+
+Silver. 
