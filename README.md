@@ -79,10 +79,10 @@ Snowflake es una plataforma de almacenamiento y análisis de datos en la nube al
 
 Ejecutar los siguientes comandos:
 
-dbt run
+- dbt run
 
-dbt build
+- dbt build
 
-dbt test
+- dbt test
 
 ---
