@@ -1,6 +1,6 @@
 # curso_data_engineering
 
-##INDICE
+## **INDICE**
 
 [Estructura del proyecto](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#estructura-del-proyecto)
 
