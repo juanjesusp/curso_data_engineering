@@ -54,5 +54,3 @@ DBT CLI ofrece la capacidad de interactuar con la herramienta para ejecutar los 
 <img src="https://www.clipartmax.com/png/small/200-2002047_snowflake-data-warehouse-logo.png" alt="Snowflake Data Warehouse Logo @clipartmax.com">
 
 Snowflake es una plataforma de almacenamiento y análisis de datos en la nube altamente diseñada para ayudar a empresas y organizaciones a almacenar, procesar y analizar grandes cantidades de datos de manera eficiente y segura. Snowflake se destaca por su arquitectura única y su capacidad para manejar datos estructurados y semiestructurados, siendo un entorno escalable y totalmente administrado. 
-
-Imagen...
