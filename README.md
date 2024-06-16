@@ -2,7 +2,7 @@
 
 
 
-Estructura del proyecto
+**Estructura del proyecto**
 
 Tiene 2 data sources, que son Google Sheets y SQL server. A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
@@ -30,9 +30,9 @@ Los tests son pruebas para validar que los datos de nuestros modelos y sources s
 
 
 
-Para este proyecto, se han utilizado las siguientes herramientas:
+**Para este proyecto, se han utilizado las siguientes herramientas:**
 
-DBT(DATA BUILD TOOL)
+**DBT(DATA BUILD TOOL)**
 
 DBT permite a los ingenieros de datos y analistas realizar transformaciones en los datos escribiendo sentencias SQL de tipo SELECT. Internamente, DBT traduce estas sentencias en tablas y en vistas. De esta forma facilita la creación de transformaciones sobre los datos disponibles en el data warehouse.
 
@@ -42,6 +42,6 @@ DBT CLI ofrece la capacidad de interactuar con la herramienta para ejecutar los 
 
 Imagen....
 
-SnowFlake
+**SnowFlake**
 
 Snowflake es una plataforma de almacenamiento y análisis de datos en la nube altamente diseñada para ayudar a empresas y organizaciones a almacenar, procesar y analizar grandes cantidades de datos de manera eficiente y segura. Snowflake se destaca por su arquitectura única y su capacidad para manejar datos estructurados y semiestructurados, siendo un entorno escalable y totalmente administrado. 
