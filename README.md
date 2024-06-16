@@ -17,7 +17,7 @@ https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/stagi
 
 https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/marts/core
 
-Testing
+** **Testing
 
 Los datos nunca están limpios al 100%. Siempre habrá matices que considerar, lógica de negocio que aplicar y datos que limpiar antes de que estén listos para ser consumidos y analizados. 
 
