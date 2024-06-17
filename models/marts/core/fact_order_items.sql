@@ -13,3 +13,4 @@ WITH stg_sql_server_dbo__order_items AS
 
 SELECT *
 FROM stg_sql_server_dbo__order_items
+

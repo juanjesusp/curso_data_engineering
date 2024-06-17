@@ -4,7 +4,7 @@
     config(
         strategy='check',
         unique_key='NK_product_id',
-        check_cols=['product_name', 'product_price'],
+        check_cols=['name', 'price'],
         invalidate_hard_deletes=True,
     )
 }}

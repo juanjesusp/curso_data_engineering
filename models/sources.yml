@@ -1,0 +1,20 @@
+version: 2
+
+sources:
+  - name: google_sheets  # name of the source
+    database: ALUMNO21DEVBRONZEDB  # this is the name of our database
+    schema: google_sheets  # this is the schema our raw data lives in
+    tables: 
+      - name: budget    
+  - name: sql_server_dbo
+    tables: 
+      - name: events
+      - name: addresses
+      - name: budget
+      - name: events
+      - name: order_items
+      - name: orders
+      - name: products
+      - name: promos
+      - name: sellers
+      - name: users
