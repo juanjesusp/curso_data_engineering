@@ -17,7 +17,6 @@ renamed_casted AS (
         , LAST_NAME
         , CREATED_AT
         , PHONE_NUMBER
-       -- , TOTAL_ORDERS
         , coalesce(TOTAL_ORDERS, 0) as TOTAL_ORDERS
         , FIRST_NAME
         , EMAIL

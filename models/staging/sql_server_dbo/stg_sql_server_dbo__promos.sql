@@ -12,7 +12,8 @@ WITH src_promos AS (
 renamed_casted AS (
     SELECT
           PROMO_ID, 
-          md5(COALESCE(NULLIF(TRIM(PROMO_ID), ''), 'DESCONOCIDO')) AS surrogate_key, 
+          --md5(COALESCE(NULLIF(TRIM(PROMO_ID), ''), 'DESCONOCIDO')) AS surrogate_key,
+         {{ dbt_utils.generate_surrogate_key(['PROMO_ID']) }} AS PROMO_ID_KEY, 
           DISCOUNT AS DISCOUNT_EUROS, 
           STATUS, 
           coalesce(_fivetran_deleted, false) as _fivetran_deleted, 

@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: int_fct_order_items
+    description: ""
+    columns:
+      - name: order_id
+        data_type: varchar
+        description: ""
+
+      - name: name
+        data_type: varchar
+        description: ""
+  
+      - name: quantity
+        data_type: number
+        description: ""
+
+      - name: price
+        data_type: float
+        description: ""
+      
+      - name: product_id
+        data_type: varchar
+        description: ""
+
+  - name: int_suma_eventos
+    description: ""
+    columns:
+      - name: user_id
+        data_type: varchar
+        description: ""
+
