@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: int_fct_order_items
+  - name: int_order_items
     description: ""
     columns:
       - name: order_id
@@ -30,4 +30,3 @@ models:
       - name: user_id
         data_type: varchar
         description: ""
-

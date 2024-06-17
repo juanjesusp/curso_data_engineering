@@ -1,0 +1,46 @@
+version: 2
+
+models:
+  - name: mart_events
+    description: ""
+    columns:
+      - name: session_id
+        data_type: varchar
+        description: ""
+        tests:
+          - unique
+          - not_null
+
+      - name: user_id
+        data_type: varchar
+        description: ""
+       
+      - name: first_name
+        data_type: varchar
+        description: ""
+        tests:
+          - not_null
+
+      - name: email
+        data_type: varchar
+        description: ""
+
+      - name: pages_view
+        data_type: varchar
+        description: ""
+
+      - name: checkout_amount
+        data_type: number
+        description: ""
+
+      - name: package_shipped_amount
+        data_type: number
+        description: ""
+
+      - name: add_to_cart_amount
+        data_type: number
+        description: ""
+       
+      - name: page_view_amount
+        data_type: number
+        description: ""

@@ -7,6 +7,7 @@ models:
       - name: _row
         tests:
           - not_null
+          - unique
       - name: product_id
         tests:
           - not_null

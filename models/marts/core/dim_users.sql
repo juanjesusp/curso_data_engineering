@@ -11,7 +11,7 @@ WITH stg_sql_server_dbo__users AS
 )
 
     select     
-    {{ dbt_utils.generate_surrogate_key(['user_id']) }} AS user_id_key
+    {{ dbt_utils.generate_surrogate_key(['user_id']) }} AS user_id
     , first_name
     , last_name
     , address_id
