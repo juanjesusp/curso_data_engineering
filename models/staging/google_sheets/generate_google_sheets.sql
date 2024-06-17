@@ -1,1 +1,0 @@
-{{ codegen.generate_source('google_sheets') }}

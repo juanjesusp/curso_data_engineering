@@ -4,6 +4,7 @@
   ) 
 }}
 
+
 WITH src_addresses AS (
     SELECT * 
     FROM {{ source('sql_server_dbo', 'addresses') }}

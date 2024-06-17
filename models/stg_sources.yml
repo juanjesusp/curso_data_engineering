@@ -7,11 +7,12 @@ sources:
     tables: 
       - name: budget    
   - name: sql_server_dbo
+    database: ALUMNO21DEVBRONZEDB  # this is the name of our database
+    schema: sql_server_dbo  # this is the schema our raw data lives in  
     tables: 
       - name: events
       - name: addresses
       - name: budget
-      - name: events
       - name: order_items
       - name: orders
       - name: products

@@ -1,456 +1,329 @@
 version: 2
 
 models:
-  - name: addresses
-    description: 'Model for addresses table.'
-    config:
-      contract:
-        enforced: true
+  - name: stg_sql_server_dbo__addresses
+    description: ""
     columns:
       - name: address_id
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
+        data_type: varchar
+        description: ""
+
       - name: zipcode
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
+        data_type: number
+        description: ""
+
       - name: country
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
+        data_type: varchar
+        description: ""
+
       - name: address
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
+        data_type: varchar
+        description: ""
+
       - name: state
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
+        data_type: varchar
+        description: ""
+
       - name: _fivetran_deleted
-        tests:
-          - not_null
         data_type: boolean
-        constraints:
-          - type: not_null
+        description: ""
+
       - name: _fivetran_synced
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
+        data_type: timestamp_tz
+        description: ""
 
-  - name: events
-    description: 'Model for events table.'
-    config:
-      contract:
-        enforced: true
+  - name: stg_sql_server_dbo__budget
+    description: ""
     columns:
-      - name: EVENT_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: PAGE_URL
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: EVENT_TYPE
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: USER_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: PRODUCT_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: SESSION_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: CREATED_AT
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-      - name: ORDER_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_DELETED
-        tests:
-          - not_null
-        data_type: boolean
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_SYNCED
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-
-  - name: orders
-    description: 'Model for orders table.'
-    config:
-      contract:
-        enforced: true
-    columns:
-      - name: EVENT_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: PAGE_URL
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: EVENT_TYPE
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: USER_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: PRODUCT_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: SESSION_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: CREATED_AT
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-      - name: ORDER_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_DELETED
-        tests:
-          - not_null
-        data_type: boolean
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_SYNCED
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-
-  - name: order_items
-    description: 'Model for order_items table.'
-    config:
-      contract:
-        enforced: true
-    columns:
-      - name: ORDER_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: PRODUCT_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: QUANTITY
-        tests:
-          - not_null
-        data_type: integer
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_DELETED
-        tests:
-          - not_null
-        data_type: boolean
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_SYNCED
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-
-  - name: products
-    description: 'Model for products table.'
-    config:
-      contract:
-        enforced: true
-    columns:
-      - name: PRODUCT_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: PRICE
-        tests:
-          - not_null
-        data_type: numeric
-        constraints:
-          - type: not_null
-      - name: NAME
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: INVENTORY
-        tests:
-          - not_null
-        data_type: integer
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_DELETED
-        tests:
-          - not_null
-        data_type: boolean
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_SYNCED
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-
-  - name: promos
-    description: 'Model for promos table.'
-    config:
-      contract:
-        enforced: true
-    columns:
-      - name: PROMO_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: DISCOUNT
-        tests:
-          - not_null
-        data_type: numeric
-        constraints:
-          - type: not_null
-      - name: STATUS
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_DELETED
-        tests:
-          - not_null
-        data_type: boolean
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_SYNCED
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-
-  - name: users
-    description: 'Model for users table.'
-    config:
-      contract:
-        enforced: true
-    columns:
-      - name: USER_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: UPDATED_AT
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-      - name: ADDRESS_ID
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: LAST_NAME
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: CREATED_AT
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-      - name: PHONE_NUMBER
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: TOTAL_ORDERS
-        tests:
-          - not_null
-        data_type: integer
-        constraints:
-          - type: not_null
-      - name: FIRST_NAME
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: EMAIL
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_DELETED
-        tests:
-          - not_null
-        data_type: boolean
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_SYNCED
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-
-  - name: users
-    description: 'Model for users table.'
-    config:
-      contract:
-        enforced: true
-    columns:
-      - name: ID_STATUS
-        tests:
-          - not_null
-        data_type: integer
-        constraints:
-          - type: not_null
-      - name: STATUS_NAME
-        tests:
-          - not_null
-        data_type: text
-        constraints:
-          - type: not_null
-  
-  - name: sellers
-    description: 'Model for sellers table.'
-    config:
-      contract:
-        enforced: true
-    columns:
-      - name: ID_SELLER
-        tests:
-          - not_null
-        data_type: int
-        constraints:
-          - type: not_null
-      - name: FIRST_NAME
-        tests:
-          - not_null
-        data_type: varchar
-        constraints:
-          - type: not_null
-      - name: LAST_NAME
-        tests:
-          - not_null
-        data_type: varchar
-        constraints:
-          - type: not_null
-      - name: SALARY
-        tests:
-          - not_null
+      - name: _row
         data_type: number
-        constraints:
-          - type: not_null
-      - name: COMISSION
-        tests:
-          - not_null
+        description: ""
+
+      - name: month
+        data_type: date
+        description: ""
+
+      - name: quantity
         data_type: number
-        constraints:
-          - type: not_null
-      - name: ADDRESS_ID
-        tests:
-          - not_null
+        description: ""
+
+      - name: _fivetran_synced
+        data_type: timestamp_tz
+        description: ""
+
+  - name: stg_sql_server_dbo__events
+    description: ""
+    columns:
+      - name: event_id
         data_type: varchar
-        constraints:
-          - type: not_null
-      - name: CONTRACT_START_DATE
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-      - name: CONTRACT_END_DATE
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-      - name: _FIVETRAN_SYNCED
-        tests:
-          - not_null
-        data_type: timestamp
-        constraints:
-          - type: not_null
-      
+        description: ""
+
+      - name: page_url
+        data_type: varchar
+        description: ""
+
+      - name: event_type
+        data_type: varchar
+        description: ""
+
+      - name: user_id
+        data_type: varchar
+        description: ""
+
+      - name: product_id
+        data_type: varchar
+        description: ""
+
+      - name: session_id
+        data_type: varchar
+        description: ""
+
+      - name: created_at
+        data_type: timestamp_ntz
+        description: ""
+
+      - name: order_id
+        data_type: varchar
+        description: ""
+
+      - name: _fivetran_deleted
+        data_type: boolean
+        description: ""
+
+      - name: _fivetran_synced
+        data_type: timestamp_tz
+        description: ""
+
+  - name: stg_sql_server_dbo__order_items
+    description: ""
+    columns:
+      - name: price
+        data_type: float
+        description: ""
+
+      - name: inventory
+        data_type: number
+        description: ""
+
+      - name: name
+        data_type: varchar
+        description: ""
+
+      - name: order_id
+        data_type: varchar
+        description: ""
+
+      - name: product_id
+        data_type: varchar
+        description: ""
+
+      - name: quantity
+        data_type: number
+        description: ""
+
+      - name: _fivetran_deleted
+        data_type: boolean
+        description: ""
+
+      - name: _fivetran_synced
+        data_type: timestamp_tz
+        description: ""
+
+  - name: stg_sql_server_dbo__orders
+    description: ""
+    columns:
+      - name: shipping_cost_euros
+        data_type: float
+        description: ""
+
+      - name: user_id
+        data_type: varchar
+        description: ""
+
+      - name: order_total
+        data_type: float
+        description: ""
+
+      - name: shipping_service
+        data_type: varchar
+        description: ""
+
+      - name: status
+        data_type: varchar
+        description: ""
+
+      - name: created_at
+        data_type: timestamp_tz
+        description: ""
+
+      - name: delivered_at
+        data_type: timestamp_tz
+        description: ""
+
+      - name: promo_id_key
+        data_type: varchar
+        description: ""
+
+      - name: promo_id
+        data_type: varchar
+        description: ""
+
+      - name: discount_euros
+        data_type: number
+        description: ""
+
+      - name: order_total_2
+        data_type: float
+        description: ""
+
+  - name: stg_sql_server_dbo__products
+    description: ""
+    columns:
+      - name: product_id
+        data_type: varchar
+        description: ""
+
+      - name: price
+        data_type: float
+        description: ""
+
+      - name: name
+        data_type: varchar
+        description: ""
+
+      - name: inventory
+        data_type: number
+        description: ""
+
+      - name: _fivetran_deleted
+        data_type: boolean
+        description: ""
+
+      - name: _fivetran_synced
+        data_type: timestamp_tz
+        description: ""
+
+  - name: stg_sql_server_dbo__promos
+    description: ""
+    columns:
+      - name: promo_id
+        data_type: varchar
+        description: ""
+
+      - name: promo_id_key
+        data_type: varchar
+        description: ""
+
+      - name: discount_euros
+        data_type: number
+        description: ""
+
+      - name: status
+        data_type: varchar
+        description: ""
+
+      - name: _fivetran_deleted
+        data_type: boolean
+        description: ""
+
+      - name: _fivetran_synced
+        data_type: timestamp_tz
+        description: ""
+
+  - name: stg_sql_server_dbo__sellers
+    description: ""
+    columns:
+      - name: seller_id
+        data_type: varchar
+        description: ""
+
+      - name: first_name
+        data_type: varchar
+        description: ""
+
+      - name: last_name
+        data_type: varchar
+        description: ""
+
+      - name: salary
+        data_type: number
+        description: ""
+
+      - name: commission
+        data_type: number
+        description: ""
+
+      - name: address_id
+        data_type: varchar
+        description: ""
+
+      - name: contract_start_date_at_date
+        data_type: date
+        description: ""
+
+      - name: contract_start_date_at_time_utc
+        data_type: time
+        description: ""
+
+      - name: contract_end_date_at_date
+        data_type: date
+        description: ""
+
+      - name: contract_end_date_at_time_utc
+        data_type: time
+        description: ""
+
+      - name: date_load
+        data_type: timestamp_tz
+        description: ""
+
+  - name: stg_sql_server_dbo__users
+    description: ""
+    columns:
+      - name: user_id
+        data_type: varchar
+        description: ""
+
+      - name: updated_at
+        data_type: timestamp_tz
+        description: ""
+
+      - name: address_id
+        data_type: varchar
+        description: ""
+
+      - name: last_name
+        data_type: varchar
+        description: ""
+
+      - name: created_at
+        data_type: timestamp_tz
+        description: ""
+
+      - name: phone_number
+        data_type: varchar
+        description: ""
+
+      - name: total_orders
+        data_type: number
+        description: ""
+
+      - name: first_name
+        data_type: varchar
+        description: ""
+
+      - name: email
+        data_type: varchar
+        description: ""
+
+      - name: is_valid_email_address
+        data_type: boolean
+        description: ""
+
+      - name: _fivetran_deleted
+        data_type: boolean
+        description: ""
+
+      - name: _fivetran_synced
+        data_type: timestamp_tz
+        description: ""

@@ -1,4 +1,4 @@
-name: 'curso'
+name: 'curso_data_engineering'
 version: '1.0.0'
 
 # Configuración general para el proyecto
@@ -6,7 +6,7 @@ config-version: 2
 
 # Configuraciones globales
 models:
-  curso:
+  curso_data_engineering:
   
     # Configuración específica para los modelos dentro de 'curso'
 
@@ -17,7 +17,7 @@ models:
     staging:
       +materialized: table
       +database: "{{ env_var('DBT_ENVIRONMENTS') }}SILVER_DB"
-      +schema: core
+      +schema: stg
 
     # Configuración específica para 'marts'
     marts:

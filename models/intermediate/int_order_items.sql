@@ -6,7 +6,7 @@
 
 WITH src_events AS (
     SELECT * 
-    FROM {{ source('sql_server_dbo', 'order_items') }}
+    FROM {{ ref('stg_sql_server_dbo__events') }}
 ),
 renamed_casted AS (
 SELECT
