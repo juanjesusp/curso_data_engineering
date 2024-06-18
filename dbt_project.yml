@@ -23,14 +23,17 @@ models:
     marts:
       +materialized: table
       +database: "{{ env_var('DBT_ENVIRONMENTS') }}GOLD_DB"
+      +schema: marts
 
     # Configuración específica para 'core'
-      core:
-        +schema: core
-        +database: "{{ env_var('DBT_ENVIRONMENTS') }}GOLD_DB"
-        int:
-         +schema: intermediate
-         +database: "{{ env_var('DBT_ENVIRONMENTS') }}GOLD_DB"
+    core:
+      +schema: core
+      +database: "{{ env_var('DBT_ENVIRONMENTS') }}GOLD_DB"
+
+    # aaaa    
+    intermediate:
+      +schema: int
+      +database: "{{ env_var('DBT_ENVIRONMENTS') }}GOLD_DB"
 
 seeds:
   +schema: seed_data

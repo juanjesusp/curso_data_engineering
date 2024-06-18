@@ -13,7 +13,7 @@ renamed_casted AS (
 SELECT
           A.EVENT_ID
         , A.PAGE_URL
-        , A.EVENT_TYPE
+        , A.EVENT_TYPE 
         , A.USER_ID
         , COALESCE(NULLIF(TRIM(A.PRODUCT_ID), ''), 'DESCONOCIDO') as PRODUCT_ID
         , A.SESSION_ID

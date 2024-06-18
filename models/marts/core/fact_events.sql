@@ -1,20 +1,19 @@
-{{
-  config(
-    materialized='table'
-  )
-}}
-
-WITH stg_sql_server_dbo__events AS 
-(
+WITH events AS (
     SELECT *
-    FROM {{ ref("stg_sql_server_dbo__events") }}
+    FROM {{ ref('stg_sql_server_dbo__events') }}
+),
+
+final AS (
+    SELECT
+        event_id,
+        page_url,
+        event_type,
+        user_id,
+        product_id,
+        session_id,
+        created_at,
+        order_id
+    FROM events
 )
 
-SELECT
-    event_id
-    , page_url
-    , user_id
-    , session_id
-    , order_id
-    , product_id
-FROM stg_sql_server_dbo__events
+SELECT * FROM final

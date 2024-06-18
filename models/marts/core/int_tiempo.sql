@@ -4,12 +4,28 @@
   ) 
 }}
 WITH FECHA AS(
-{{ dbt_date.get_date_dimension(start_date="1990-01-01", end_date="2023-01-01") }})
 
-SELECT date_day
-, day_of_week
-, day_of_month
-, day_of_year
-, month_of_year
-, quarter_of_year
-from FECHA
+ SELECT
+        DATEADD(day, SEQ4(), '2021-01-01') AS date
+    FROM
+        TABLE(GENERATOR(ROWCOUNT => 500)) 
+
+),
+
+fecha_f AS (
+select
+    --{{dbt_utils.generate_surrogate_key(['date::date'])}} as time_id,
+    date::date as date,
+    extract(year from date) as year,
+    extract(month from date) as month,
+    LEFT(date,7) as year_month,
+    monthname(date) as month_name,
+    extract(day from date) as day,
+    extract(dayofweek from date) as number_week_day,
+    dayname(date) as week_day,
+    extract(quarter from date) as quarter
+from dates 
+
+)
+
+SELECT * FROM fecha_f

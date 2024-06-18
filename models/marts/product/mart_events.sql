@@ -1,4 +1,3 @@
-
 WITH events AS (
     SELECT * 
     FROM {{ref('fact_events')}}
@@ -21,10 +20,10 @@ joined AS (
         a.user_id,
         u.first_name,
         u.email,
-        --MIN(a.created_at_utc) AS begin_session,
-        --MAX(a.created_at_utc) AS end_session,
+        MIN(a.created_at) AS begin_session,
+        MAX(a.created_at) AS end_session,
         COUNT(a.page_url) AS pages_views,
-        --DATEDIFF(minute, MIN(a.created_at_utc), MAX(a.created_at_utc)) AS session_minutes,
+        DATEDIFF(minute, MIN(a.created_at), MAX(a.created_at)) AS session_minutes,
         b.checkout_amount,
         b.package_shipped_amount,
         b.add_to_cart_amount,

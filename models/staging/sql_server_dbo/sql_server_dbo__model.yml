@@ -2,328 +2,328 @@ version: 2
 
 models:
   - name: stg_sql_server_dbo__addresses
-    description: ""
+    description: "Tabla de direcciones únicas para mi proyecto"
     columns:
       - name: address_id
         data_type: varchar
-        description: ""
+        description: "Identificador único de dirección"
 
       - name: zipcode
         data_type: number
-        description: ""
+        description: "Código postal de la dirección"
 
       - name: country
         data_type: varchar
-        description: ""
+        description: "País en el que se encuentra nuestra dirección"
 
       - name: address
         data_type: varchar
-        description: ""
+        description: "Nombre de la Dirección"
 
       - name: state
         data_type: varchar
-        description: ""
+        description: "Estado o comunidad de localización de nuestra direccion"
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: stg_sql_server_dbo__budget
-    description: ""
+    description: "Tabla previsión ventas mes"
     columns:
       - name: _row
         data_type: number
-        description: ""
+        description: "Fila"
 
       - name: month
         data_type: date
-        description: ""
+        description: "Mes"
 
       - name: quantity
         data_type: number
-        description: ""
+        description: "Cantidad"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: stg_sql_server_dbo__events
-    description: ""
+    description: "Tabla de eventos registrados dentro de nuestra fuente"
     columns:
       - name: event_id
         data_type: varchar
-        description: ""
+        description: "Identificador único del evento"
 
       - name: page_url
         data_type: varchar
-        description: ""
+        description: "Dirección electrónica (url) en la que se realiza el evento"
 
       - name: event_type
         data_type: varchar
-        description: ""
+        description: "Tipo de evento realizado"
 
       - name: user_id
         data_type: varchar
-        description: ""
+        description: "Usuario que ha realizado el tipo de evento"
 
       - name: product_id
         data_type: varchar
-        description: ""
+        description: "Identificador de producto para nuestro evento"
 
       - name: session_id
         data_type: varchar
-        description: ""
+        description: "Sesión en la cual se realiza el evento"
 
       - name: created_at
         data_type: timestamp_ntz
-        description: ""
+        description: "Fecha de evento en dias-meses-años de un usuario"
 
       - name: order_id
         data_type: varchar
-        description: ""
+        description: "Identificador de order para nuestro evento"
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: stg_sql_server_dbo__order_items
-    description: ""
+    description: "Tabla de la linea de una order específica"
     columns:
       - name: price
         data_type: float
-        description: ""
+        description: "Precio del producto de una order"
 
       - name: inventory
         data_type: number
-        description: ""
+        description: "Cantidad de inventario de una order"
 
       - name: name
         data_type: varchar
-        description: ""
+        description: "Nombre de un pedido"
 
       - name: order_id
         data_type: varchar
-        description: ""
+        description: "Identificador del pedido"
 
       - name: product_id
         data_type: varchar
-        description: ""
+        description: "Identificador del producto"
 
       - name: quantity
         data_type: number
-        description: ""
+        description: "Cantidad de productos en una order"
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: stg_sql_server_dbo__orders
-    description: ""
+    description: "Tabla que contiene la informacion de todos los pedidos"
     columns:
       - name: shipping_cost_euros
         data_type: float
-        description: ""
+        description: "Costo del envío en euros"
 
       - name: user_id
         data_type: varchar
-        description: ""
+        description: "Identificador del usuario"
 
       - name: order_total
         data_type: float
-        description: ""
+        description: "Total del pedido"
 
       - name: shipping_service
         data_type: varchar
-        description: ""
+        description: "Transporte del envío"
 
       - name: status
         data_type: varchar
-        description: ""
+        description: "Estado del pedido"
 
       - name: created_at
         data_type: timestamp_tz
-        description: ""
+        description: "Hora de creación del pedido"
 
       - name: delivered_at
         data_type: timestamp_tz
-        description: ""
+        description: "Fecha de tipo dia-mes-año en la que  llega la order"
 
       - name: promo_id_key
         data_type: varchar
-        description: ""
+        description: "Key del identificador de la promoción que se aplica a la order"
 
       - name: promo_id
         data_type: varchar
-        description: ""
+        description: "Identificador de la promoción que se aplica a la order"
 
       - name: discount_euros
         data_type: number
-        description: ""
+        description: "Valor númerico de una promoción esta en tipo entero y no es el valor entero de porcentaje"
 
       - name: order_total_2
         data_type: float
-        description: ""
+        description: "Campo de valor total de nuestra order"
 
   - name: stg_sql_server_dbo__products
-    description: ""
+    description: "Tabla con los resgitros de productos de las diferentes order"
     columns:
       - name: product_id
         data_type: varchar
-        description: ""
+        description: "Identificador único para un tipo de producto"
 
       - name: price
         data_type: float
-        description: ""
+        description: "Valor del producto"
 
       - name: name
         data_type: varchar
-        description: ""
+        description: "Nombre del producto"
 
       - name: inventory
         data_type: number
-        description: ""
+        description: "Inventario de los productos"
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: stg_sql_server_dbo__promos
-    description: ""
+    description: "Tabla con las promociones de una order"
     columns:
       - name: promo_id
         data_type: varchar
-        description: ""
+        description: "Identificador único para una promoción"
 
       - name: promo_id_key
         data_type: varchar
-        description: ""
+        description: "Key Identificador único para una promoción"
 
       - name: discount_euros
         data_type: number
-        description: ""
+        description: "Valor númerico de una promoción esta en tipo entero y no es el valor entero de porcentaje"
 
       - name: status
         data_type: varchar
-        description: ""
+        description: "Estado en el cual se encuentra una promoción para ser usada"
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: stg_sql_server_dbo__sellers
-    description: ""
+    description: "Tabla de los datos de los vendedores"
     columns:
       - name: seller_id
         data_type: varchar
-        description: ""
+        description: "Identificador único del vendedor"
 
       - name: first_name
         data_type: varchar
-        description: ""
+        description: "Nombre del vendedor"
 
       - name: last_name
         data_type: varchar
-        description: ""
+        description: "Apellido del vendedor"
 
       - name: salary
         data_type: number
-        description: ""
+        description: "Valor del salario del vendedor"
 
       - name: commission
         data_type: number
-        description: ""
+        description: "Valor de la comisión del vendedor"
 
       - name: address_id
         data_type: varchar
-        description: ""
+        description: "Identificador único de la address del vendedor"
 
       - name: contract_start_date_at_date
         data_type: date
-        description: ""
+        description: "Fecha de inicio de contrato en dias-mes-años del vendedor"
 
       - name: contract_start_date_at_time_utc
         data_type: time
-        description: ""
+        description: "Fecha de inicio de contrato en horas-minutos-segundos del vendedor"
 
       - name: contract_end_date_at_date
         data_type: date
-        description: ""
+        description: "Fecha del inicio del contrato en dias-mes-año del vendedor"
 
       - name: contract_end_date_at_time_utc
         data_type: time
-        description: ""
+        description: "Fecha de fin del contrato en dias-mes-año del vendedor en modo UTC"
 
       - name: date_load
         data_type: timestamp_tz
         description: ""
 
   - name: stg_sql_server_dbo__users
-    description: ""
+    description: "Tabla que contiene la información de un usuario"
     columns:
       - name: user_id
         data_type: varchar
-        description: ""
+        description: "Identificador único de un usuario"
 
       - name: updated_at
         data_type: timestamp_tz
-        description: ""
+        description: "Fecha de actualización en dia-mes-año de un usuario"
 
       - name: address_id
         data_type: varchar
-        description: ""
+        description: "Identificador único de dirección del usuario"
 
       - name: last_name
         data_type: varchar
-        description: ""
+        description: "Campo que contiene el apellido del usuario"
 
       - name: created_at
         data_type: timestamp_tz
-        description: ""
+        description: "Fecha de creación en dia-mes-año de un usuario"
 
       - name: phone_number
         data_type: varchar
-        description: ""
+        description: "Campo que contiene el número telefónico de un usuario"
 
       - name: total_orders
         data_type: number
-        description: ""
+        description: "Campo de valor total del usuario"
 
       - name: first_name
         data_type: varchar
-        description: ""
+        description: "Nombre del usuario"
 
       - name: email
         data_type: varchar
-        description: ""
+        description: "Correo del usuario"
 
       - name: is_valid_email_address
         data_type: boolean
-        description: ""
+        description: "Función de una expresión regular que verifica el correo"
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
