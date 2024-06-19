@@ -30,7 +30,7 @@ A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
 - Bronze. Son los datos crudos tal cual, vienen sin tratar.
 
-- Silver. Aquí se producen transformaciones y casteos. Podemos ver un ejemplo en la siguiente captura:
+- Silver. Aquí es donde se producen transformaciones y casteos. Aquí podemos ver cómo es la capa Staging.
 
 ![Capa_silver](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/5da2f7d5-414c-44b0-8968-6b2229999fb7)
 
