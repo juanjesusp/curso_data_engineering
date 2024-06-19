@@ -18,7 +18,14 @@
 
 ## **Estructura del proyecto**
 
-Tiene 2 data sources, que son Google Sheets y SQL server. A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
+Este proyecto es pequeño, por lo cual tiene datos limitados. Tiene 2 data sources, que son Google Sheets y SQL server. 
+
+En nuestro source tenemos lo siguiente:
+
+
+
+
+A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
 
 - Bronze. Son los datos crudos tal cual, vienen sin tratar.
