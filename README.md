@@ -69,6 +69,9 @@ Los tests son pruebas para validar que los datos de nuestros modelos y sources s
 
 Los snapshots son una herramienta que nos permite en dbt ver el estado anterior de los datos sobre tablas mutables, ya que en ocasiones en algunos DW no es posible. Es decir, registra los cambios de una tabla mutable en el tiempo.
 
+![snapshot budget](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/162f0dc1-dc56-49b9-82f7-5fe108c68082)
+
+
 ---
 
 ## **Para este proyecto, se han utilizado las siguientes herramientas:**
