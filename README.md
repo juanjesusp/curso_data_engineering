@@ -43,6 +43,9 @@ A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
 - https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/marts/core
 
+  ![Capa_gold](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/5525741f-6437-46fc-9e68-d559332329e2)
+
+
 ---
 
 ## **Testing**
