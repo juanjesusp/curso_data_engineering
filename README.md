@@ -12,6 +12,8 @@
 
 [Herramientas utilizadas](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#para-este-proyecto-se-han-utilizado-las-siguientes-herramientas)
 
+[Linaje]
+
 [Usar el proyecto](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#usar-el-proyecto)
 
 [Recursos](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#recursos)
@@ -110,6 +112,12 @@ DBT CLI ofrece la capacidad de interactuar con la herramienta para ejecutar los 
 Snowflake es una plataforma de almacenamiento y análisis de datos en la nube altamente diseñada para ayudar a empresas y organizaciones a almacenar, procesar y analizar grandes cantidades de datos de manera eficiente y segura. Snowflake se destaca por su arquitectura única y su capacidad para manejar datos estructurados y semiestructurados, siendo un entorno escalable y totalmente administrado. 
 
 ---
+
+## **Linaje**
+
+
+
+--
 
 ## **Usar el proyecto**
 
