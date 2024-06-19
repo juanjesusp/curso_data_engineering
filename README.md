@@ -52,7 +52,9 @@ A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
 ## **Testing**
 
-Los datos nunca están limpios al 100%. Siempre habrá matices que considerar, lógica de negocio que aplicar y datos que limpiar antes de que estén listos para ser consumidos y analizados. 
+Los datos nunca están limpios al 100%. Por eso hay que hacer tests. Para ello, algunos de ellos hay que definirlos en el yaml y otros tienen que estar en la carpeta de tests.
+
+Siempre habrá matices que considerar, lógica de negocio que aplicar y datos que limpiar antes de que estén listos para ser consumidos y analizados. 
 
 Proactivamente probar sus datos le permite tener más facilidad de que los datos que están pasando a l@s usuari@s son exactos.
 
