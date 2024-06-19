@@ -16,9 +16,15 @@
 
 ---
 
+## **Introducción**
+
+Este proyecto está basado sobre lo que hemos hecho en clase. Es un proyecto pequeño, por lo cual tiene datos limitados. A continuación veremos el proyecto junto con las herramientas utilizadas.
+
+---
+
 ## **Estructura del proyecto**
 
-Este proyecto es pequeño, por lo cual tiene datos limitados. Tiene 2 data sources, que son Google Sheets y SQL server. 
+El proyecto tiene 2 data sources, que son Google Sheets y SQL server. 
 
 En nuestro source tenemos lo siguiente:
 
