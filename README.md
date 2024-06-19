@@ -47,8 +47,6 @@ A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
 - https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/marts/core
 
- 
-
 
 ---
 
@@ -61,6 +59,7 @@ Siempre habrá matices que considerar, lógica de negocio que aplicar y datos qu
 Proactivamente probar sus datos le permite tener más facilidad de que los datos que están pasando a l@s usuari@s son exactos.
 
 Además, una vez hemos establecido tests en nuestro proyecto, cuando continuemos realizando desarrollos estos nos permitirán validar que todo sigue siendo correcto y no hemos realizado un cambio que afecte a otros desarrollos.
+
 
 Los tests son pruebas para validar que los datos de nuestros modelos y sources son correctos. A continuación, se muestra una captura de un test genérico:
 
