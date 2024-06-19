@@ -55,6 +55,9 @@ Además, una vez hemos establecido tests en nuestro proyecto, cuando continuemos
 
 Los tests son pruebas para validar que los datos de nuestros modelos y sources son correctos.
 
+![test_positive_values](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/586769f4-ea83-4c11-8223-91db463a3efd)
+
+
 ---
 
 ## **Snapshots**
