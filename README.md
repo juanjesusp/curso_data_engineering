@@ -30,11 +30,11 @@ A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
 - Bronze. Son los datos crudos tal cual, vienen sin tratar.
 
-- Silver. Aquí se producen transformaciones y casteos.
--
--![Capa_silver](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/5da2f7d5-414c-44b0-8968-6b2229999fb7)
+- Silver. Aquí se producen transformaciones y casteos. Podemos ver un ejemplo en la siguiente captura:
 
--
+![Capa_silver](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/5da2f7d5-414c-44b0-8968-6b2229999fb7)
+
+
 - Podemos ver un ejemplo del proyecto de la capa silver en el siguiente enlace:
 
 - https://github.com/juanjesusp/curso_data_engineering/tree/rama_init/models/staging
