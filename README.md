@@ -30,7 +30,7 @@ El proyecto tiene 2 data sources, que son Google Sheets y SQL server.
 
 En nuestro source tenemos lo siguiente:
 
-
+-- Imagen
 
 
 A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
