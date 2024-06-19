@@ -7,6 +7,9 @@ models:
       - name: address_id
         data_type: varchar
         description: "Identificador único de dirección"
+        tests:
+          - not_null
+          - unique
 
       - name: zipcode
         data_type: number
@@ -57,6 +60,8 @@ models:
       - name: event_id
         data_type: varchar
         description: "Identificador único del evento"
+        tests:
+          - not_null
 
       - name: page_url
         data_type: varchar
@@ -69,14 +74,20 @@ models:
       - name: user_id
         data_type: varchar
         description: "Usuario que ha realizado el tipo de evento"
+        tests:
+          - not_null
 
       - name: product_id
         data_type: varchar
         description: "Identificador de producto para nuestro evento"
+        tests:
+          - not_null
 
       - name: session_id
         data_type: varchar
         description: "Sesión en la cual se realiza el evento"
+        tests:
+          - not_null
 
       - name: created_at
         data_type: timestamp_ntz
@@ -85,6 +96,8 @@ models:
       - name: order_id
         data_type: varchar
         description: "Identificador de order para nuestro evento"
+        tests:
+          - not_null
 
       - name: _fivetran_deleted
         data_type: boolean
@@ -112,10 +125,14 @@ models:
       - name: order_id
         data_type: varchar
         description: "Identificador del pedido"
+        tests:
+          - not_null
 
       - name: product_id
         data_type: varchar
         description: "Identificador del producto"
+        tests:
+          - not_null
 
       - name: quantity
         data_type: number
@@ -139,6 +156,8 @@ models:
       - name: user_id
         data_type: varchar
         description: "Identificador del usuario"
+        tests:
+          - not_null
 
       - name: order_total
         data_type: float
@@ -163,10 +182,14 @@ models:
       - name: promo_id_key
         data_type: varchar
         description: "Key del identificador de la promoción que se aplica a la order"
+        tests:
+          - not_null
 
       - name: promo_id
         data_type: varchar
         description: "Identificador de la promoción que se aplica a la order"
+        tests:
+          - not_null
 
       - name: discount_euros
         data_type: number
@@ -182,6 +205,8 @@ models:
       - name: product_id
         data_type: varchar
         description: "Identificador único para un tipo de producto"
+        tests:
+          - not_null
 
       - name: price
         data_type: float
@@ -209,10 +234,14 @@ models:
       - name: promo_id
         data_type: varchar
         description: "Identificador único para una promoción"
+        tests:
+          - not_null
 
       - name: promo_id_key
         data_type: varchar
         description: "Key Identificador único para una promoción"
+        tests:
+          - not_null
 
       - name: discount_euros
         data_type: number
@@ -236,6 +265,8 @@ models:
       - name: seller_id
         data_type: varchar
         description: "Identificador único del vendedor"
+        tests:
+          - not_null
 
       - name: first_name
         data_type: varchar
@@ -256,6 +287,8 @@ models:
       - name: address_id
         data_type: varchar
         description: "Identificador único de la address del vendedor"
+        tests:
+          - not_null
 
       - name: contract_start_date_at_date
         data_type: date
@@ -283,6 +316,8 @@ models:
       - name: user_id
         data_type: varchar
         description: "Identificador único de un usuario"
+        tests:
+          - not_null
 
       - name: updated_at
         data_type: timestamp_tz
@@ -291,6 +326,8 @@ models:
       - name: address_id
         data_type: varchar
         description: "Identificador único de dirección del usuario"
+        tests:
+          - not_null
 
       - name: last_name
         data_type: varchar

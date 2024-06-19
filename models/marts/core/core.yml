@@ -2,34 +2,38 @@ version: 2
 
 models:
   - name: dim_products
-    description: ""
+    description: "Dimensión de productos"
     columns:
       - name: product_id
         data_type: varchar
-        description: ""
+        description: "Identificador de producto único"
+        tests:
+          - not_null
 
       - name: inventory
         data_type: number
-        description: ""
+        description: "Inventario de los productos"
 
   - name: dim_promos
-    description: ""
+    description: "Dimensión de las promos"
     columns:
       - name: promo_id
         data_type: varchar
-        description: ""
+        description: "Identificador único de la promoción"
+        tests:
+          - not_null
 
       - name: surrogate_key
         data_type: varchar
-        description: ""
+        description: "Clave subrogada generada artificialmente"
 
       - name: discount_euros
         data_type: number
-        description: ""
+        description: "Descuento en euros"
 
       - name: status
         data_type: varchar
-        description: ""
+        description: "Estado de la promoción"
 
       - name: _fivetran_deleted
         data_type: boolean
@@ -40,11 +44,13 @@ models:
         description: ""
 
   - name: dim_pruebas
-    description: ""
+    description: "Dimensión para hacer testeos"
     columns:
       - name: promo_id
         data_type: varchar
         description: ""
+        tests:
+          - not_null
 
       - name: surrogate_key
         data_type: varchar
@@ -67,42 +73,47 @@ models:
         description: ""
 
   - name: dim_status
-    description: ""
+    description: "Estado de la dimensión"
     columns:
       - name: id_status
         data_type: varchar
-        description: ""
+        description: "Activa o inactiva"
+        tests:
+          - not_null
 
       - name: status
         data_type: varchar
         description: ""
 
   - name: dim_users
-    description: ""
+    description: "Dimensión de los usuarios"
     columns:
       - name: user_id_key
         data_type: varchar
-        description: ""
+        description: "Key del id del usuario"
+        
 
       - name: first_name
         data_type: varchar
-        description: ""
+        description: "Nombre del usuario"
 
       - name: last_name
         data_type: varchar
-        description: ""
+        description: "Apellido el usuario"
 
       - name: address_id
         data_type: varchar
-        description: ""
-     
+        description: "Identificador de la dirección del usuario"
+        tests:
+          - not_null
+
       - name: email
         data_type: varchar
-        description: ""
+        description: "Correo-e del usuario"
 
       - name: phone_number
         data_type: varchar
-        description: ""
+        description: "Número de teléfono del usuario"
 
   - name: fact_budget
     description: ""
@@ -114,6 +125,8 @@ models:
       - name: product_id
         data_type: varchar
         description: ""
+        tests:
+          - not_null
 
       - name: quantity
         data_type: number
@@ -128,23 +141,27 @@ models:
         description: ""
 
   - name: fact_events
-    description: ""
+    description: "Tabla de hechos de eventos."
     columns:
       - name: event_id
         data_type: varchar
-        description: ""
+        description: "Identificador del evento"
+        tests:
+          - not_null
 
       - name: page_url
         data_type: varchar
-        description: ""
+        description: "Dirección web"
 
       - name: user_id
         data_type: varchar
-        description: ""
+        description: "Identificador del usuario"
+        tests:
+          - not_null
 
       - name: session_id
         data_type: varchar
-        description: ""
+        description: "Identificador de la sesión del usuario"
         tests:
           - not_null
           - relationships:
@@ -153,12 +170,13 @@ models:
 
       - name: order_id
         data_type: varchar
-        description: ""
-        
+        description: "Identificador del pedido"
+        tests:
+          - not_null
 
       - name: product_id
         data_type: varchar
-        description: ""
+        description: "Identificador del producto"
         tests:
           - not_null
           - relationships:
@@ -166,13 +184,13 @@ models:
                   field: product_id
 
   - name: fact_order_items
-    description: ""
+    description: "Tabla de hechos de order-items"
     columns:
 
       - name: seller_id
         data_type: varchar
         description: ""
-    
+
       - name: price
         data_type: float
         description: ""
@@ -225,6 +243,8 @@ models:
       - name: user_id
         data_type: varchar
         description: ""
+        tests:
+          - not_null
 
       - name: order_total
         data_type: float
@@ -253,6 +273,8 @@ models:
       - name: promo_id
         data_type: varchar
         description: ""
+        tests:
+          - not_null
 
       - name: discount_euros
         data_type: number
@@ -268,7 +290,9 @@ models:
       - name: seller_id
         data_type: varchar
         description: ""
-
+        tests:
+          - not_null
+          
       - name: first_name
         data_type: varchar
         description: ""
@@ -288,6 +312,8 @@ models:
       - name: address_id
         data_type: varchar
         description: ""
+        tests:
+          - not_null
 
       - name: contract_start_date_at_date
         data_type: date

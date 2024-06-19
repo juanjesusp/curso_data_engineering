@@ -17,6 +17,7 @@ renamed_casted AS (
         , A.ORDER_ID
         , A.PRODUCT_ID
         , A.QUANTITY
+        , A.ID_SELLER
         , coalesce(A._fivetran_deleted, false) as _fivetran_deleted
         , convert_timezone('UTC',A._fivetran_synced) as _fivetran_synced
     FROM ALUMNO21DEVBRONZEDB.SQL_SERVER_DBO.ORDER_ITEMS A

@@ -11,6 +11,6 @@ WITH stg_sql_server_dbo__order_items AS
 )
 
 
-SELECT PRICE, INVENTORY, NAME, ORDER_ID, PRODUCT_ID, QUANTITY, ID_SELLER
+SELECT *
 FROM stg_sql_server_dbo__order_items
 
