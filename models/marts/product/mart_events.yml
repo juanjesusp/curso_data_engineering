@@ -2,52 +2,52 @@ version: 2
 
 models:
   - name: mart_events
-    description: ""
+    description: "mart de eventos"
     columns:
       - name: session_id
         data_type: varchar
-        description: ""
+        description: "id de la sesión"
 
       - name: user_id
         data_type: varchar
-        description: ""
+        description: "identificador del usuario"
 
       - name: first_name
         data_type: varchar
-        description: ""
+        description: "nombre"
 
       - name: email
         data_type: varchar
-        description: ""
+        description: "correo-e"
 
       - name: begin_session
         data_type: timestamp_ntz
-        description: ""
+        description: "inicio de la sesión"
 
       - name: end_session
         data_type: timestamp_ntz
-        description: ""
+        description: "fin de sesión"
 
       - name: pages_views
         data_type: number
-        description: ""
+        description: "pages_views"
 
       - name: session_minutes
         data_type: number
-        description: ""
+        description: "sesión en minutos"
 
       - name: checkout_amount
         data_type: number
-        description: ""
+        description: "checkout_amount"
 
       - name: package_shipped_amount
         data_type: number
-        description: ""
+        description: "package_shipped_amount"
 
       - name: add_to_cart_amount
         data_type: number
-        description: ""
+        description: "add_to_cart_amount"
 
       - name: page_view_amount
         data_type: number
-        description: ""
+        description: "page_view_amount"
