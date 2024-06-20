@@ -95,6 +95,12 @@ Los snapshots son una herramienta que nos permite hacer en dbt copias instantán
 
 ---
 
+## **dbt run**
+
+![dbt_run_ok](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/6041cae9-6dc3-4f11-9fc8-8b6dbf839959)
+
+---
+
 ## **Para este proyecto, se han utilizado las siguientes herramientas:**
 
 ### **DBT(DATA BUILD TOOL)**
@@ -121,12 +127,6 @@ Snowflake es una plataforma de almacenamiento y análisis de datos en la nube al
 
 ---
 
-## **dbt run**
-
-![dbt_run_ok](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/6041cae9-6dc3-4f11-9fc8-8b6dbf839959)
-
-
----
 
 ## **Usar el proyecto**
 
