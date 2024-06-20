@@ -10,15 +10,17 @@
 
 [Snapshots](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#snapshots)
 
-[Herramientas utilizadas](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#para-este-proyecto-se-han-utilizado-las-siguientes-herramientas)
-
 [Linaje](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#linaje)
+
+[Prueba con dbt run](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#dbt-run)
+
+[Prueba con dbt build](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#dbt-build)
+
+[Herramientas utilizadas](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#para-este-proyecto-se-han-utilizado-las-siguientes-herramientas)
 
 [Usar el proyecto](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#usar-el-proyecto)
 
 [Recursos](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#recursos)
-
-[Prueba con dbt run](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#dbt-run)
 
 ---
 
