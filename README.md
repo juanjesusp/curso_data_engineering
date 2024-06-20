@@ -93,7 +93,7 @@ Los snapshots son una herramienta que nos permite hacer en dbt copias instantán
 
 ## **Macros**
 
-
+Lorem ipsum
 
 ---
 
