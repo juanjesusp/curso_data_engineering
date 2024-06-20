@@ -121,6 +121,13 @@ Snowflake es una plataforma de almacenamiento y análisis de datos en la nube al
 
 ---
 
+## **dbt run**
+
+![dbt_run_ok](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/6041cae9-6dc3-4f11-9fc8-8b6dbf839959)
+
+
+---
+
 ## **Usar el proyecto**
 
 Ejecutar los siguientes comandos:
