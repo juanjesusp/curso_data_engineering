@@ -101,6 +101,13 @@ Los snapshots son una herramienta que nos permite hacer en dbt copias instantán
 
 ---
 
+## **dbt build**
+
+![dbt_build_ok](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/db951d28-184e-4244-881a-4b6e71633a3b)
+
+
+---
+
 ## **Para este proyecto, se han utilizado las siguientes herramientas:**
 
 ### **DBT(DATA BUILD TOOL)**
