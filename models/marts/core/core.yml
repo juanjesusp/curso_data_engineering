@@ -37,53 +37,53 @@ models:
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: dim_pruebas
     description: "Dimensión para hacer testeos"
     columns:
       - name: promo_id
         data_type: varchar
-        description: ""
+        description: "id de la promoción"
         tests:
           - not_null
 
       - name: surrogate_key
         data_type: varchar
-        description: ""
+        description: "clave generada artificialmente"
 
       - name: discount_euros
         data_type: number
-        description: ""
+        description: "descuento en euros"
 
       - name: status
         data_type: varchar
-        description: ""
+        description: "estado"
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: dim_status
     description: "Estado de la dimensión"
     columns:
       - name: id_status
         data_type: varchar
-        description: "Activa o inactiva"
+        description: "id del estado"
         tests:
           - not_null
 
       - name: status
         data_type: varchar
-        description: ""
+        description: "estado"
 
   - name: dim_users
     description: "Dimensión de los usuarios"
@@ -116,29 +116,29 @@ models:
         description: "Número de teléfono del usuario"
 
   - name: fact_budget
-    description: ""
+    description: "tabla de hechos de budget"
     columns:
       - name: _row
         data_type: number
-        description: ""
+        description: "fila"
 
       - name: product_id
         data_type: varchar
-        description: ""
+        description: "id del producto"
         tests:
           - not_null
 
       - name: quantity
         data_type: number
-        description: ""
+        description: "cantidad"
 
       - name: month
         data_type: date
-        description: ""
+        description: "mes"
 
       - name: date_load
         data_type: timestamp_tz
-        description: ""
+        description: "datos de carga"
 
   - name: fact_events
     description: "Tabla de hechos de eventos."
@@ -189,23 +189,23 @@ models:
 
       - name: seller_id
         data_type: varchar
-        description: ""
+        description: "id del vendedor"
 
       - name: price
         data_type: float
-        description: ""
+        description: "precio"
 
       - name: inventory
         data_type: number
-        description: ""
+        description: "inventario"
 
       - name: name
         data_type: varchar
-        description: ""
+        description: "nombre"
 
       - name: order_id
         data_type: varchar
-        description: ""
+        description: "orden del pedido"
         tests:
           - not_null
           - relationships:
@@ -214,7 +214,7 @@ models:
 
       - name: product_id
         data_type: varchar
-        description: ""
+        description: "id del producto"
         tests:
           - not_null
           - relationships:
@@ -223,114 +223,114 @@ models:
 
       - name: quantity
         data_type: number
-        description: ""
+        description: "cantidad"
 
       - name: _fivetran_deleted
         data_type: boolean
-        description: ""
+        description: "Nos dice si ha habido un borrado de las sources"
 
       - name: _fivetran_synced
         data_type: timestamp_tz
-        description: ""
+        description: "Date that the data was loaded."
 
   - name: fact_orders
-    description: ""
+    description: "tabla de hechos de pedidos"
     columns:
       - name: shipping_cost_euros
         data_type: float
-        description: ""
+        description: "coste de envío en euros"
 
       - name: user_id
         data_type: varchar
-        description: ""
+        description: "id del usuario"
         tests:
           - not_null
 
       - name: order_total
         data_type: float
-        description: ""
+        description: "total del pedido"
 
       - name: shipping_service
         data_type: varchar
-        description: ""
+        description: "tipo de servicio"
 
       - name: status
         data_type: varchar
-        description: ""
+        description: "estado"
 
       - name: created_at
         data_type: timestamp_tz
-        description: ""
+        description: "Fecha de evento en dias-meses-años de un usuario"
 
       - name: delivered_at
         data_type: timestamp_tz
-        description: ""
+        description: "Fecha de tipo dia-mes-año en la que  llega la order"
 
       - name: surrogate_key
         data_type: varchar
-        description: ""
+        description: "clave subrogada creada artificialmente"
 
       - name: promo_id
         data_type: varchar
-        description: ""
+        description: "id de la promoción"
         tests:
           - not_null
 
       - name: discount_euros
         data_type: number
-        description: ""
+        description: "descuento en euros"
 
       - name: order_total_2
         data_type: float
-        description: ""
+        description: "pedido total"
 
   - name: dim_sellers
-    description: ""
+    description: "dimensión de vendedores"
     columns:
       - name: seller_id
         data_type: varchar
-        description: ""
+        description: "id del vendedor"
         tests:
           - not_null
           
       - name: first_name
         data_type: varchar
-        description: ""
+        description: "nombre"
 
       - name: last_name
         data_type: varchar
-        description: ""
+        description: "apellidos"
 
       - name: salary
         data_type: number
-        description: ""
+        description: "salario"
 
       - name: commission
         data_type: number
-        description: ""
+        description: "comisión"
 
       - name: address_id
         data_type: varchar
-        description: ""
+        description: "id de la dirección"
         tests:
           - not_null
 
       - name: contract_start_date_at_date
         data_type: date
-        description: ""
+        description: "Inicio del contrato"
 
       - name: contract_start_date_at_time_utc
         data_type: time
-        description: ""
+        description: "Inicio del contrato utc"
 
       - name: contract_end_date_at_date
         data_type: date
-        description: ""
+        description: "fin del contrato"
 
       - name: contract_end_date_at_time_utc
         data_type: time
-        description: ""
+        description: "fin del contrato utc"
 
       - name: date_load
         data_type: timestamp_tz
-        description: ""
+        description: "carga de datos"

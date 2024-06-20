@@ -308,7 +308,7 @@ models:
 
       - name: date_load
         data_type: timestamp_tz
-        description: ""
+        description: "Carga de datos"
 
   - name: stg_sql_server_dbo__users
     description: "Tabla que contiene la información de un usuario"
