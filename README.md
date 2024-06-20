@@ -18,6 +18,8 @@
 
 [Recursos](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#recursos)
 
+[Prueba con dbt run](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#dbt-run)
+
 ---
 
 ## **Introducción**
