@@ -10,9 +10,15 @@
 
 [Snapshots](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#snapshots)
 
-[Herramientas utilizadas](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#para-este-proyecto-se-han-utilizado-las-siguientes-herramientas)
+[Macros](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#macros)
 
 [Linaje](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#linaje)
+
+[Prueba con dbt run](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#dbt-run)
+
+[Prueba con dbt build](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#dbt-build)
+
+[Herramientas utilizadas](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#para-este-proyecto-se-han-utilizado-las-siguientes-herramientas)
 
 [Usar el proyecto](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#usar-el-proyecto)
 
@@ -87,10 +93,34 @@ Los snapshots son una herramienta que nos permite hacer en dbt copias instantán
 
 ---
 
+## **Macros**
+
+Las macros son trozos de código (SQL + jinja) que pueden ser reutilizados tantas veces sea necesario. 
+
+Son similares a las funciones en cualquier lenguaje de programación. Útiles cuando se repite mucho código en las consultas SQL.
+
+En la siguiente captura, se puede apreciar una macro:
+
+Imagen
+
+---
 
 ## **Linaje**
 
 ![Linaje](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/56bc1a28-03be-4fc0-ae71-8d005559517e)
+
+
+---
+
+## **dbt run**
+
+![dbt_run_ok](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/6041cae9-6dc3-4f11-9fc8-8b6dbf839959)
+
+---
+
+## **dbt build**
+
+![dbt_build_ok](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/db951d28-184e-4244-881a-4b6e71633a3b)
 
 
 ---
@@ -120,6 +150,7 @@ DBT CLI ofrece la capacidad de interactuar con la herramienta para ejecutar los 
 Snowflake es una plataforma de almacenamiento y análisis de datos en la nube altamente diseñada para ayudar a empresas y organizaciones a almacenar, procesar y analizar grandes cantidades de datos de manera eficiente y segura. Snowflake se destaca por su arquitectura única y su capacidad para manejar datos estructurados y semiestructurados, siendo un entorno escalable y totalmente administrado. 
 
 ---
+
 
 ## **Usar el proyecto**
 
