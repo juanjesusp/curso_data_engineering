@@ -32,14 +32,15 @@ Este proyecto está basado sobre lo que hemos hecho en clase. Es un proyecto peq
 
 ---
 
-## **Estructura del proyecto**
-
-El proyecto tiene 2 data sources, que son Google Sheets y SQL server. 
-
-En nuestro source tenemos lo siguiente:
+## **Esquema E-R
 
 ![Source](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/18573966-513f-40b6-ae02-92d263753e74)
 
+---
+
+## **Estructura del proyecto**
+
+El proyecto tiene 2 data sources, que son Google Sheets y SQL server. 
 
 
 A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
