@@ -32,7 +32,7 @@ Este proyecto está basado sobre lo que hemos hecho en clase. Es un proyecto peq
 
 ---
 
-## **Esquema E-R
+## **Esquema E-R**
 
 ![Source](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/18573966-513f-40b6-ae02-92d263753e74)
 
