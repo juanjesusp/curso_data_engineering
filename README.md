@@ -81,6 +81,9 @@ Los tests son pruebas para validar que los datos de nuestros modelos y sources s
 
 ![test_positive_values](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/586769f4-ea83-4c11-8223-91db463a3efd)
 
+![yml-tests](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/bcfcb170-bf70-4fd1-bc54-4fcb872674e4)
+
+![yml-tests-2](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/7409b0f4-9796-4839-98e1-6f8f11994021)
 
 ---
 
