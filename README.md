@@ -12,6 +12,8 @@
 
 [Herramientas utilizadas](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#para-este-proyecto-se-han-utilizado-las-siguientes-herramientas)
 
+[Linaje](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#linaje)
+
 [Usar el proyecto](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#usar-el-proyecto)
 
 [Recursos](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#recursos)
@@ -81,6 +83,14 @@ Los snapshots son una herramienta que nos permite hacer en dbt copias instantán
 
 
 ![snapshot budget](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/162f0dc1-dc56-49b9-82f7-5fe108c68082)
+
+
+---
+
+
+## **Linaje**
+
+![Linaje](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/56bc1a28-03be-4fc0-ae71-8d005559517e)
 
 
 ---
