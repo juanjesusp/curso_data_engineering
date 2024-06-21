@@ -115,6 +115,9 @@ A continuación, se muestra una captura de imagen de una macro. Esta macro lo ú
 
 Marts es el otro directorio principal de modelos de un proyecto dbt. Los marts se basan tradicionalmente en entidades (tablas de dimensiones) y procesos de negocio (tablas de hechos), y se pueden agrupar por unidades de negocio.
 
+A continuación se muestra una captura de un mart:
+
+![mart_events](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/d0b27796-db06-4bd7-90a2-bae66ef6d416)
 
 
 ---
