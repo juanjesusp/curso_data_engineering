@@ -48,7 +48,8 @@ A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
 - Silver. Aquí es donde se producen transformaciones y casteos. Aquí podemos ver cómo es la capa Staging.
 
-![Capa_silver_V2](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/da821277-6fd9-451f-b30d-62498289081e)
+![Capa_silver_V2](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/ecb8163e-8b3b-4225-b117-8efe49fd2c8c)
+
 
 
 
