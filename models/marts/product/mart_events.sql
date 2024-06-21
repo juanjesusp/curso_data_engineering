@@ -20,14 +20,14 @@ joined AS (
         a.user_id,
         u.first_name,
         u.email,
-        MIN(a.created_at) AS begin_session,
-        MAX(a.created_at) AS end_session,
-        COUNT(a.page_url) AS pages_views,
-        DATEDIFF(minute, MIN(a.created_at), MAX(a.created_at)) AS session_minutes,
-        b.checkout_amount,
-        b.package_shipped_amount,
-        b.add_to_cart_amount,
-        b.page_view_amount
+        MIN(a.created_at) AS begin_session, -- Inicio sesión
+        MAX(a.created_at) AS end_session, -- Fin sesión
+        COUNT(a.page_url) AS pages_views, -- Número de páginas/links vistas
+        DATEDIFF(minute, MIN(a.created_at), MAX(a.created_at)) AS session_minutes, -- Sesión en minutos que se calcula haciendo la diferencia del created_at
+        b.checkout_amount, -- proceso de pago
+        b.package_shipped_amount, -- total paquetes enviados
+        b.add_to_cart_amount, -- total cesta
+        b.page_view_amount -- total páginas vistas
     FROM users u
     JOIN events a
     ON u.user_id = a.user_id
