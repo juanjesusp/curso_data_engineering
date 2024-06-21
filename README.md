@@ -103,6 +103,8 @@ Las macros son trozos de código (SQL + jinja) que pueden ser reutilizados tanta
 
 Son similares a las funciones en cualquier lenguaje de programación. Útiles cuando se repite mucho código en las consultas SQL.
 
+A continuación, se muestra una captura de imagen de una macro. Esta macro lo único que va hacer es devolver una lista de elementos de tipo de eventos cuando sea llamada desde el modelo.
+
 ![int_suma_eventos](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/ade32dec-b3d5-4fa3-bd4d-a688954172c7)
 
 
