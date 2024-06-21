@@ -113,6 +113,8 @@ A continuación, se muestra una captura de imagen de una macro. Esta macro lo ú
 
 ## **Marts**
 
+Marts es el otro directorio principal de modelos de un proyecto dbt. Los marts se basan tradicionalmente en entidades (tablas de dimensiones) y procesos de negocio (tablas de hechos), y se pueden agrupar por unidades de negocio.
+
 
 
 ---
