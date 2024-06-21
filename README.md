@@ -12,6 +12,8 @@
 
 [Macros](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#macros)
 
+[Marts](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#marts)
+
 [Linaje](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#linaje)
 
 [Prueba con dbt run](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#dbt-run)
@@ -19,10 +21,6 @@
 [Prueba con dbt build](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#dbt-build)
 
 [Herramientas utilizadas](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#para-este-proyecto-se-han-utilizado-las-siguientes-herramientas)
-
-[Usar el proyecto](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#usar-el-proyecto)
-
-[Recursos](https://github.com/juanjesusp/curso_data_engineering/blob/rama_init/README.md#recursos)
 
 ---
 
@@ -32,14 +30,15 @@ Este proyecto está basado sobre lo que hemos hecho en clase. Es un proyecto peq
 
 ---
 
-## **Estructura del proyecto**
-
-El proyecto tiene 2 data sources, que son Google Sheets y SQL server. 
-
-En nuestro source tenemos lo siguiente:
+## **Esquema E-R**
 
 ![Source](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/18573966-513f-40b6-ae02-92d263753e74)
 
+---
+
+## **Estructura del proyecto**
+
+El proyecto tiene 2 data sources, que son Google Sheets y SQL server. 
 
 
 A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
@@ -49,7 +48,8 @@ A parte, el proyecto está formado por 3 etapas las cuales son las siguientes:
 
 - Silver. Aquí es donde se producen transformaciones y casteos. Aquí podemos ver cómo es la capa Staging.
 
-![Capa_silver](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/5da2f7d5-414c-44b0-8968-6b2229999fb7)
+![Capa_silver_V2](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/da821277-6fd9-451f-b30d-62498289081e)
+
 
 
 - Podemos ver un ejemplo del proyecto de la capa silver en el siguiente enlace:
@@ -80,6 +80,9 @@ Los tests son pruebas para validar que los datos de nuestros modelos y sources s
 
 ![test_positive_values](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/586769f4-ea83-4c11-8223-91db463a3efd)
 
+![yml-tests](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/bcfcb170-bf70-4fd1-bc54-4fcb872674e4)
+
+![yml-tests-2](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/7409b0f4-9796-4839-98e1-6f8f11994021)
 
 ---
 
@@ -99,9 +102,20 @@ Las macros son trozos de código (SQL + jinja) que pueden ser reutilizados tanta
 
 Son similares a las funciones en cualquier lenguaje de programación. Útiles cuando se repite mucho código en las consultas SQL.
 
-En la siguiente captura, se puede apreciar una macro:
+A continuación, se muestra una captura de imagen de una macro. Esta macro lo único que va hacer es devolver una lista de elementos de tipo de eventos cuando sea llamada desde el modelo.
 
-Imagen
+![int_suma_eventos](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/ade32dec-b3d5-4fa3-bd4d-a688954172c7)
+
+---
+
+## **Marts**
+
+Marts es el otro directorio principal de modelos de un proyecto dbt. Los marts se basan tradicionalmente en entidades (tablas de dimensiones) y procesos de negocio (tablas de hechos), y se pueden agrupar por unidades de negocio.
+
+A continuación se muestra una captura de un mart:
+
+![mart_events](https://github.com/juanjesusp/curso_data_engineering/assets/170645486/d0b27796-db06-4bd7-90a2-bae66ef6d416)
+
 
 ---
 
@@ -150,24 +164,3 @@ DBT CLI ofrece la capacidad de interactuar con la herramienta para ejecutar los 
 Snowflake es una plataforma de almacenamiento y análisis de datos en la nube altamente diseñada para ayudar a empresas y organizaciones a almacenar, procesar y analizar grandes cantidades de datos de manera eficiente y segura. Snowflake se destaca por su arquitectura única y su capacidad para manejar datos estructurados y semiestructurados, siendo un entorno escalable y totalmente administrado. 
 
 ---
-
-
-## **Usar el proyecto**
-
-Ejecutar los siguientes comandos:
-
-- dbt run
-
-- dbt build
-
-- dbt test
-
----
-
-## **Recursos**
-
-- Aprender más sobre dbt en la [documentación](https://docs.getdbt.com/docs/introduction)
-- Visitar el [foro](https://discourse.getdbt.com/) para las preguntas más comunes y sus respuestas.
-- Unirse a la [comunidad](http://community.getbdt.com/) de dbt para aprender de otros analistas e ingenieros.
-- Encuentra [eventos de dbt](https://events.getdbt.com/) cerca de ti.
-- Revisar [el blog](https://blog.getdbt.com/) para las últimas novedades sobre el desarrollo y las mejores prácticas de dbt.
